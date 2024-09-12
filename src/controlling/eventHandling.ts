@@ -1,4 +1,4 @@
-/** @module eventHandling */
+/** @module controlling/eventHandling */
 
 /**
  * Derive state classes from this base state.

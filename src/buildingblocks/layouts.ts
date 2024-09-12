@@ -4,6 +4,9 @@ import { Controller } from "../controlling/controller";
 import { Area } from "./areas";
 
 
+/**
+ * @class TableLayoutController
+ */
 export class TableLayoutController extends Controller {
   tableId: string;
   layout: TableLayout;

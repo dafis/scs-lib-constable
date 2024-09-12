@@ -15,7 +15,6 @@
   "scripts": {
     "build": "rollup -c ./rollup.config.mjs",
     "dev": "rollup -wc ./rollup.config.mjs",
-    "docs": "mkdir -p dist/docs && jsdoc src -c jsdoc.json -r -R ./README.md -d dist/docs/",
     "test": "jest",
     "pretest": "npm run build"
   },
@@ -44,7 +43,6 @@
     "better-docs": "^2.7.3",
     "eslint": "^8.55.0",
     "jest": "^29.7.0",
-    "jsdoc": "^4.0.2",
     "rimraf": "^5.0.5",
     "rollup": "^4.9.6",
     "rollup-plugin-dts": "^6.1.0",

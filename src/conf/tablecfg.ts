@@ -1,4 +1,4 @@
-/** @module tablecfg */
+/** @module config/tablecfg */
 
 import { AreaConfig, KindOfArea } from "./areascfg";
 import { LayoutConfig } from "./layoutcfg";
@@ -8,7 +8,7 @@ import { LayoutConfig } from "./layoutcfg";
 type AreaRepo = { [name: string]: AreaConfig<KindOfArea> };
 
 /*
- * @interface
+ * @class
  */
 export interface TableConfig {
   id: string;

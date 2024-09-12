@@ -1,7 +1,7 @@
-/** @module controller */
+/** @module controlling/controller */
 
 /**
- * A Controller
+ * @class 
  */
 export abstract class Controller {
   id: string;

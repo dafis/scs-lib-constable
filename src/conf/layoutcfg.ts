@@ -8,8 +8,6 @@ export interface ContainerConfig {
   ySpan: number;
 }
 
-/**
-  */
 export interface LayoutConfig {
   xSize: number;
   ySize: number;
