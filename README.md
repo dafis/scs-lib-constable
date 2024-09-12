@@ -1,7 +1,25 @@
-# Template - Java Script Library for Typescript and Rollup
+# Constructable Data Table
 
-> This repository contains a blueprint for a Javascript library project.
-> Typescript, Rollup, Jest, JsDoc and Coverage are added and pre configured.
-> Feel free to add your own tools or remove predefined tools as to fit your
-> needs.
+> A highly configurable data table. With data sources, layouts, 
+> cell types, cell zoom, cell editor, styling, widgets, filter, 
+> pagination, sorter and grouping.
 
+## Intro
+
+
+## Use Cases
+
+- display tabular data
+- filter with custom filter elements
+- define data cluster/groups
+- paginate large data lists
+- table areas can be synched according to scroooling, sorting and filtering.
+- zoom into cells
+- edit data with customizable cell editors
+
+## Getting started
+
+
+## License
+
+[MIT](LICENSE)

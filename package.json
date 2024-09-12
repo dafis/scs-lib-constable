@@ -1,16 +1,16 @@
 {
-  "name": "mylib",
+  "name": "constable",
   "version": "0.1.0",
   "description": "A highly configurable data table component.",
-  "main": "./dist/mylib.cjs.js",
-  "browser": "./dist/mylib.umd.min.js",
-  "module": "./dist/mylib.esm.js",
-  "types": "./dist/mylib.d.ts",
+  "main": "./dist/constable.cjs.js",
+  "browser": "./dist/constable.umd.min.js",
+  "module": "./dist/constable.esm.js",
+  "types": "./dist/constable.d.ts",
   "exports": {
-    "./constable.cjs.js": "./dist/mylib.cjs.js",
-    "./constable.umd.min.js": "./dist/mylib.umd.min.js",
-    "./constable.esm.js": "./dist/mylib.esm.js",
-    "./constable.d.ts": "./dist/mylib.d.ts"
+    "./constable.cjs.js": "./dist/constable.cjs.js",
+    "./constable.umd.min.js": "./dist/constable.umd.min.js",
+    "./constable.esm.js": "./dist/constable.esm.js",
+    "./constable.d.ts": "./dist/constable.d.ts"
   },
   "scripts": {
     "build": "rollup -c ./rollup.config.mjs",
@@ -24,17 +24,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "<Repo URL HERE>"
+    "url": "https://github.com/ppk42/scs-lib-constable"
   },
   "keywords": [
-    "mylib"
+    "constable"
   ],
-  "author": "YOUR NAME <YOUREMAIL@example.com>",
+  "author": "Peter Paul Kiefer <dafisppk@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "YOUR BUG REPO URL HERE"
+    "url": "https://github.com/ppk42/scs-lib-constable/issues"
   },
-  "homepage": "YOUR HOMEPAGE URL HERE",
+  "homepage": "https://github.com/ppk42/scs-lib-constable#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
