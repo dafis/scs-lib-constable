@@ -1,4 +1,6 @@
-class DataSource {
+import {DataCache} from './caching';
+
+export class DataSource {
   id: string;
   cache: DataCache;
 
@@ -7,8 +9,5 @@ class DataSource {
     this.cache = new DataCache(id + "_data_cache", opts.cache_size || 5000);
   }
 
-
-
 }
 
-export { DataSource };

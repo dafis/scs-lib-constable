@@ -1,30 +1,19 @@
-/** @module datasources/access */
-/**
- * @class
- */
-class AbstractDataAcessComponent {
-  name: string;
-  constructor(name: string) {
-    this.name = name;
-  }
-
-}
-
-/**
-* @class
-*/
-class DataReader extends AbstractDataAcessComponent {
-  constructor(name: string) {
-    super(name)
+export abstract class AbstractDataAcessComponent {
+  id: string;
+  constructor(id: string) {
+    this.id = id;
   }
 }
 
-/**
-* @class
-*/
-class DataWriter extends AbstractDataAcessComponent {
-  constructor(name: string) {
-    super(name)
+export class DataReader extends AbstractDataAcessComponent {
+  constructor(id: string) {
+    super(id)
+  }
+}
+
+export class DataWriter extends AbstractDataAcessComponent {
+  constructor(id: string) {
+    super(id)
   }
 }
 

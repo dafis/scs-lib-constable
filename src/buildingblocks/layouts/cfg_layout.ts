@@ -1,5 +1,3 @@
-/** @module config/layoutcfg */
-
 export interface ContainerConfig {
   id: string;
   xPos: number;
@@ -13,8 +11,3 @@ export interface LayoutConfig {
   ySize: number;
   container: {[name: string]: ContainerConfig};
 }
-
-/**
- * @class
- */
-export class Dummy {}

@@ -1,7 +1,7 @@
 type FieldDataType = string | number | Date | boolean | {};
 type FieldDataTypeNames = "string" | "number" | "Date" | "boolean" | "object";
 
-abstract class Field<T extends FieldDataType> {
+export abstract class Field<T extends FieldDataType> {
   _name: string;
   _typeString: FieldDataTypeNames;
 
@@ -21,7 +21,7 @@ abstract class Field<T extends FieldDataType> {
   abstract extractValue(record: { [key: string]: FieldDataType }): T;
 }
 
-class TextField extends Field<string> {
+export class TextField extends Field<string> {
 
   constructor(name: string) {
     super(name, "string");
@@ -40,7 +40,7 @@ class TextField extends Field<string> {
 
 }
 
-class NumberField extends Field<number> {
+export class NumberField extends Field<number> {
 
   constructor(name: string) {
     super(name, "number");
@@ -58,7 +58,7 @@ class NumberField extends Field<number> {
   }
 }
 
-class BooleanField extends Field<boolean> {
+export class BooleanField extends Field<boolean> {
 
   constructor(name: string) {
     super(name, "boolean");
@@ -76,7 +76,7 @@ class BooleanField extends Field<boolean> {
   }
 }
 
-class DateField extends Field<Date> {
+export class DateField extends Field<Date> {
   
   constructor(name: string) {
     super(name, "Date");
@@ -94,7 +94,7 @@ class DateField extends Field<Date> {
   }
 }
 
-class DataRecord {
+export class DataRecord {
   name: string;
   fields: { [name: string]: Field<FieldDataType> };
 
@@ -109,4 +109,3 @@ class DataRecord {
   }
 }
 
-export { DataRecord, Field, TextField, NumberField, BooleanField, DateField };

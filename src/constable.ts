@@ -1,9 +1,13 @@
-import { ConstructableTable } from "./buildingblocks/table";
-import { DataSource } from "./datasources/datasource";
+export class ConstructableTable {
+  id: string;
 
-function createTable(id: string): ConstructableTable {
+  constructor(id: string) {
+    this.id = id;
+  }
+}
+
+export function createTable(id: string): ConstructableTable {
   const table = new ConstructableTable(id);
   return table;
 }
 
-export { createTable };

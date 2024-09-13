@@ -1,8 +1,3 @@
-/** @module controlling/controller */
-
-/**
- * @class 
- */
 export abstract class Controller {
   id: string;
 

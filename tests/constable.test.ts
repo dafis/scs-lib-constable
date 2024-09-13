@@ -1,5 +1,4 @@
-import { createTable } from "../src/constable";
-import { ConstructableTable } from "../src/buildingblocks/table";
+import { createTable, ConstructableTable } from "../src/constable";
 
 let testnumber = 1;
 

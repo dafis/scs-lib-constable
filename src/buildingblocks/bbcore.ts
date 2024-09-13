@@ -11,9 +11,4 @@ export abstract class RenderableBuildingBlockBase extends BuildingBlockBase {
   }
 }
 
-export abstract class BuildingBlockBase extends BuildingBlockBase {
-  constructor(id: string) {
-    super(id);
-  }
-}
 

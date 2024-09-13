@@ -1,12 +1,7 @@
-/** @module buildingblocks/layouts */
-
-import { Controller } from "../controlling/controller";
-import { Area } from "./areas";
+import { Controller } from "../../controlling/controller";
+import { Area } from "../areas/comp_areas";
 
 
-/**
- * @class TableLayoutController
- */
 export class TableLayoutController extends Controller {
   tableId: string;
   layout: TableLayout;
@@ -18,12 +13,6 @@ export class TableLayoutController extends Controller {
   }
 }
 
-/**
- * We use the TableLayout to sprecifiy and control the appearance of the table.
- * We use a TableLayoutController to interact with the layout.
- *
- * @class TableLayout
- */
 export class TableLayout {
   id: string;
   areas: Area[] = [];

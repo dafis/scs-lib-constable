@@ -1,4 +1,4 @@
-class DataCache {
+export class DataCache {
   id: string;
   size: number
   data: [{[key:string]: any}?];
