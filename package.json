@@ -1,55 +1,47 @@
 {
-  "name": "constable",
-  "version": "0.1.0",
-  "description": "A highly configurable data table component.",
-  "main": "./dist/constable.cjs.js",
-  "browser": "./dist/constable.umd.min.js",
-  "module": "./dist/constable.esm.js",
-  "types": "./dist/constable.d.ts",
-  "exports": {
-    "./constable.cjs.js": "./dist/constable.cjs.js",
-    "./constable.umd.min.js": "./dist/constable.umd.min.js",
-    "./constable.esm.js": "./dist/constable.esm.js",
-    "./constable.d.ts": "./dist/constable.d.ts"
-  },
-  "scripts": {
-    "build": "rollup -c ./rollup.config.mjs",
-    "dev": "rollup -wc ./rollup.config.mjs",
-    "test": "jest",
-    "pretest": "npm run build"
-  },
-  "files": [
-    "dist",
-    "docs"
-  ],
+  "name": "scs-lib-constable",
+  "version": "1.0.0",
+  "description": "Constructable Data Table library providing flexible, reactive data table solutions.",
+  "author": "Peter Paul Kiefer",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ppk42/scs-lib-constable"
+    "url": "https://github.com/ppk42/scs-lib-constable.git"
   },
   "keywords": [
-    "constable"
+    "data table",
+    "typescript",
+    "reactive",
+    "data source",
+    "frontend"
   ],
-  "author": "Peter Paul Kiefer <dafisppk@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ppk42/scs-lib-constable/issues"
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.js",
+  "types": "dist/constable.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "npm run lint && jest",
+    "lint": "npm run format && eslint",
+    "format": "prettier --write 'src/**/*.ts'",
+    "docs": "typedoc",
+    "build:watch": "rollup -cw"
   },
-  "homepage": "https://github.com/ppk42/scs-lib-constable#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@types/jest": "^29.5.12",
-    "eslint": "^8.55.0",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "punycode": "^2.3.1",
-    "rimraf": "^5.0.5",
-    "rollup": "^4.9.6",
-    "rollup-plugin-dts": "^6.1.0",
-    "ts-jest": "^29.1.2",
-    "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/jest": "^27.5.2",
+    "@types/mocha": "^10.0.9",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "rollup": "^2.56.3",
+    "ts-jest": "^27.0.7",
+    "typedoc": "^0.26.11",
+    "typescript": "^4.9.5"
   }
 }
